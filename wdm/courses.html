@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create and Manage Courses</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        
+        header {
+            background-image: url('uta.jpeg');
+            background-size: cover;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        section {
+            padding: 20px;
+            background-color: rgb(202, 246, 241);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #0071bc;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            margin-top: 20px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #0071bc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #005194;
+        }
+        .header-image {
+            max-width: 100px; 
+            height: auto; 
+            margin-right: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="uta.jpeg" alt="Header Image" class="header-image">
+    </header>
+
+    <nav>
+        <ul>
+            <a href="instructor.home.html"> <li>Home</li> </a>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <section id="create-course">
+        <h2>Create a New Course</h2>
+        <form>
+            <label for="course-name">Course Name:</label>
+            <input type="text" id="course-name" name="course-name" required>
+
+            <label for="course-description">Course Description:</label>
+            <textarea id="course-description" name="course-description" rows="4" required></textarea>
+
+            <button type="submit">Create Course</button>
+        </form>
+    </section>
+
+    <section id="manage-courses">
+        <h2>Manage Existing Courses</h2>
+        <a href="course-catalog.html"> <li>Courses</li> </a>
+        
+    </section>
+    <br>
+
+
+</body>
+</html>

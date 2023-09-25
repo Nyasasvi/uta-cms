@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback to Students</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-image: url('uta.jpeg');
+            background-size: cover;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header-image {
+            max-width: 100px; 
+            height: auto; 
+            margin-right: 20px; 
+        }
+
+        
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        section {
+            padding: 20px;
+            background-color: rgb(202, 246, 241);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #000000;
+        }
+
+        /* Feedback styles */
+        .feedback-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .feedback-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            flex-basis: calc(50% - 20px);
+        }
+
+        .student-name {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .feedback-text {
+            font-size: 16px;
+        }
+
+        /* Form styles */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label,
+        textarea {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #0071bc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #005194;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="uta.jpeg" alt="Header Image" class="header-image">
+        </header>
+
+    <nav>
+        <ul>
+            <a href="instructor.home.html"> <li>Home</li> </a>
+            <li><a href="#feedback">Logout</a></li>
+        </ul>
+    </nav>
+
+    <section id="view-feedback">
+        <h2>View Feedback</h2>
+        <div class="feedback-container">
+            <div class="feedback-item">
+                <div class="student-name">John Doe</div>
+                <div class="feedback-text">
+                    Great job on the assignment! Keep up the good work.
+                </div>
+            </div>
+            <div class="feedback-item">
+                <div class="student-name">Jane Smith</div>
+                <div class="feedback-text">
+                    Your presentation skills have improved significantly.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="give-feedback">
+        <h2>Give Feedback</h2>
+        <form>
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" name="student-name" required>
+
+            <label for="feedback-text">Feedback:</label>
+            <textarea id="feedback-text" name="feedback-text" rows="4" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+ 
+</body>
+</html>

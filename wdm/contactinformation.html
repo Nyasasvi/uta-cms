@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Personal and Contact Information</title>
+    <style>
+       body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-image: url('uta.jpeg');
+            background-size: cover;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+             padding: 30px;
+            border-radius: 5px;
+            max-width: 100%; /* Ensure the container is not wider than the viewport */
+            width: 400px; /* Set a maximum width for the container */       
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        .header-image {
+            max-width: 100px; 
+            height: auto; 
+            margin-right: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="uta.jpeg" alt="Header Image" class="header-image">
+        </header>
+        
+        
+        
+        <nav>
+            <ul>
+                <a href="instructor.home.html"> <li>Home</li> </a>
+                <li><a href="#feedback">Logout</a></li>
+            </ul>
+        </nav>
+    <div class="container">
+        <h1>Update Personal and Contact Information</h1>
+        <form action="update.php" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required>
+            </div>
+            <button type="submit">Update Information</button>
+        </form>
+    </div>
+</body>
+</html>

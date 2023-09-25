@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Progress Tracking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url('uta.jpeg');
+            background-size: cover;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color:rgb(202, 246, 241);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #eee;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .progress {
+            width: 60%; /* Change this width dynamically based on the student's progress */
+            height: 100%;
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+        .header-image {
+            max-width: 100px; 
+            height: auto; 
+            margin-right: 20px; 
+        }
+		
+    </style>
+</head>
+<body>
+    <header>
+        <img src="uta.jpeg" alt="Header Image" class="header-image">
+        </header>
+        
+        
+        
+        <nav>
+            <ul>
+                <a href="instructor.home.html"> <li>Home</li> </a>
+                <li><a href="#feedback">Logout</a></li>
+            </ul>
+        </nav>
+    <div class="container">
+        <h1>Student Progress Tracking</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Progress</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Otis Willey</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                    </td>
+                    <td>60%</td>
+                </tr>
+                <tr>
+                    <td>Adam jackson</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </td>
+                    <td>75%</td>
+                </tr>
+                <tr>
+                    <td>Samantha Christene</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 55%;"></div>
+                        </div>
+                    </td>
+                    <td>55%</td>
+                </tr>
+                <tr>
+                    <td>Ruby Katherine</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                    </td>
+                    <td>70%</td>
+                </tr>
+
+                    <tr>
+                        <td>Amanda Jiggets</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </td>
+                        <td>90%</td>
+
+                    </tr>    
+
+                    <tr>
+                        <td>Karen Mathews</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                        </td>
+                        <td>70%</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pam Robbert</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 72%;"></div>
+                            </div>
+                        </td>
+                        <td>72%</td>
+                    </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

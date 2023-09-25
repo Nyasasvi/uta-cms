@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile – Instructor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-image: url('uta.jpeg');
+            background-size: cover;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        section {
+            padding: 20px;
+            background-color: rgb(202, 246, 241);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #000102;
+        }
+
+        footer {
+            background-color: #ededed;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        button {
+            background-color: #0071bc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #005194;
+        }
+		.header-image {
+            max-width: 100px; 
+            height: auto; 
+            margin-right: 20px; 
+        }
+		
+    </style>
+
+</head>
+
+
+
+<body>
+    <header>
+	<img src="uta.jpeg" alt="Header Image" class="header-image">
+    </header>
+	
+	
+    
+    <nav>
+        <ul>
+            <a href="./homepage.html"> <li>Home</li> </a>
+            <li><a href="#feedback">Logout</a></li>
+        </ul>
+    </nav>
+	
+	<h2>Welcome, Maeve Milburn</h2>
+
+    <section id="courses">
+        <h2>Courses</h2>
+        <p>Create, edit, and manage your courses here.</p>
+        <button onclick="location.href='courses.html'">Go to Courses</button>
+    </section>
+
+    <section id="feedback">
+        <h2>Feedback</h2>
+        <p>Provide feedback to students based on assessments and exams.</p>
+        <button onclick="location.href='feedback.html'">Give Feedback</button>
+    </section>
+
+    <section id="personal">
+        <h2>Personal Information</h2>
+        <p>Update your personal information and contact details.</p>
+        <button onclick="location.href='contactinformation.html'">Edit Profile</button>
+    </section>
+
+    <section id="progress">
+        <h2>Progress Tracking</h2>
+        <p>Track and analyze the progress of your students.</p>
+        <button onclick="location.href='progresstracking.html'">View Progress</button>
+    </section>
+
+    <section id="chat">
+        <h2>Chat</h2>
+        <p>Chat with students and colleagues for better communication.</p>
+        <button onclick="location.href='chat-page.html'">Start Chat</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 University of Texas at Arlington</p>
+    </footer>
+</body>
+</html>
